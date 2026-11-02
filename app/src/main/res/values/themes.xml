@@ -9,7 +9,7 @@
         <item name="android:enforceNavigationBarContrast" tools:targetApi="q">false</item>
         <item name="android:enforceStatusBarContrast" tools:targetApi="q">false</item>
         <item name="android:forceDarkAllowed" tools:targetApi="q">false</item>
-        <item name="bottomSheetDialogTheme">@style/ThemeOverlay.Krypton Music.BottomSheetDialog</item>
+        <item name="bottomSheetDialogTheme">@style/ThemeOverlay.KatMusic.BottomSheetDialog</item>
     </style>
 
     <style name="ThemeOverlay.KatMusic.BottomSheetDialog" parent="ThemeOverlay.Material3.BottomSheetDialog">
@@ -27,7 +27,7 @@
     <style name="Theme.KatMusic.Splash" parent="Theme.KatMusic">
         <item name="android:windowSplashScreenBackground" tools:targetApi="s">@color/splash_background</item>
         <item name="android:windowSplashScreenAnimatedIcon" tools:targetApi="s">@mipmap/ic_launcher</item>
-        <item name="postSplashScreenTheme">@style/Theme.Krypton Music</item>
+        <item name="postSplashScreenTheme">@style/Theme.KatMusic</item>
         <item name="windowSplashScreenBackground">@color/splash_background</item>
         <item name="windowSplashScreenAnimatedIcon">@mipmap/ic_launcher</item>
     </style>
