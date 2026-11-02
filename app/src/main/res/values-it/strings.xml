@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">KatMusic</string>
+    <string name="app_name">Krypton Music</string>
     <string name="widget_name">Lettore KatMusic</string>
     <string name="widget_description">Copertina, dettagli del brano e controlli di riproduzione per ogni app multimediale</string>
     <string name="widget_obsidian_name">KatMusic Vetro ossidiana</string>

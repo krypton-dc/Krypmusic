@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">KatMusic</string>
+    <string name="app_name">Krypton Music</string>
     <string name="widget_name">KatMusic Player</string>
     <string name="widget_description">Cover, Trackdetails und Wiedergabesteuerung für alle Medien-Apps</string>
 
