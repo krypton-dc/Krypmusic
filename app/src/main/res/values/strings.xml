@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">KatMusic</string>
-    <string name="widget_name">KatMusic Player</string>
+    <string name="app_name">Krypton Music</string>
+    <string name="widget_name">KryptonMusic Player</string>
     <string name="widget_description">Artwork, track details and playback controls for every media app</string>
-    <string name="widget_obsidian_name">KatMusic Obsidian Glass</string>
+    <string name="widget_obsidian_name">Krypton Music Obsidian Glass</string>
     <string name="widget_obsidian_description">Frosted obsidian glass player with translucent depth and crystal rim</string>
 
     <!-- Bottom navigation -->
@@ -17,7 +17,7 @@
     <string name="update_available">Update Available</string>
     <string name="update">Update</string>
     <string name="dismiss_update">Dismiss update</string>
-    <string name="update_ready_to_install">KatMusic v%1$s is ready to install</string>
+    <string name="update_ready_to_install">Krypton Music v%1$s is ready to install</string>
 
     <!-- Settings -->
     <string name="settings">Settings</string>
@@ -60,7 +60,7 @@
     <string name="theme_mode_system">System</string>
     <string name="theme_mode_light">Light</string>
     <string name="theme_mode_dark">Dark</string>
-    <string name="settings_katmusic_theme">KatMusic Signature Theme</string>
+    <string name="settings_katmusic_theme">Krypton Music Signature Theme</string>
     <string name="settings_katmusic_theme_sub">Bespoke logo palette • Electric Lime &amp; Obsidian Teal</string>
     <string name="settings_amoled">AMOLED Mode</string>
     <string name="settings_amoled_sub">Pure black background (Dark mode only)</string>
