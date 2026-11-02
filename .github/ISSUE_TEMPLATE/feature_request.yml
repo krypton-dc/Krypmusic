@@ -1,12 +1,12 @@
 name: Feature Request
-description: Suggest a new feature or improvement for KatMusic
+description: Suggest a new feature or improvement for Krypton Music
 title: "[Feature]: "
 labels: ["enhancement"]
 body:
   - type: markdown
     attributes:
       value: |
-        Thank you for suggesting improvements to KatMusic.
+        Thank you for suggesting improvements to Krypton Music.
   - type: textarea
     id: problem
     attributes:

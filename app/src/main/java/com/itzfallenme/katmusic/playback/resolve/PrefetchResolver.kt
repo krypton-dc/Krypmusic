@@ -134,6 +134,6 @@ class PrefetchResolver(
     }
 
     private companion object {
-        const val TAG = "KatMusicResolver"
+        const val TAG = "Krypton MusicResolver"
     }
 }

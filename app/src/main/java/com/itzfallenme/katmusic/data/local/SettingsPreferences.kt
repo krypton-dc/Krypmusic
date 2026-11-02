@@ -164,7 +164,7 @@ data class MiscSettings(
     /** In-app language override tag: "system" (default), "en", "tr", "zh-Hans". */
     val appLanguageTag: String = AppLanguage.SYSTEM.tag,
     /** Subfolder name under public Music/ where downloads are saved.
-     *  Default "KatMusic" -> Music/KatMusic. Scoped storage (API 29+)
+     *  Default "Krypton Music" -> Music/KatMusic. Scoped storage (API 29+)
      *  forbids arbitrary paths, so only the leaf folder name is configurable. */
     val downloadFolder: String = DEFAULT_DOWNLOAD_FOLDER,
     /** User-chosen SAF tree Uri (ACTION_OPEN_DOCUMENT_TREE) for downloads,
@@ -257,7 +257,7 @@ enum class DownloadFolderStructure(val id: String, val titleRes: Int, val exampl
 }
 
 /** Default subfolder under Music/ for offline tracks (Music/KatMusic). */
-const val DEFAULT_DOWNLOAD_FOLDER = "KatMusic"
+const val DEFAULT_DOWNLOAD_FOLDER = "Krypton Music"
 
 /** Sanitize a user-entered download folder to a safe single path segment:
  *  no separators, no traversal, max 40 chars, fallback to default. */

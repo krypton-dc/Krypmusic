@@ -181,7 +181,7 @@ class AutoEqCatalog @Inject constructor(
         "$BASE_URL/${entry.encodedPath}/${AutoEqIndexParser.encodeSegment(fileName)}"
 
     private fun download(url: String): String {
-        val request = Request.Builder().url(url).header("User-Agent", "KatMusic-AutoEQ").build()
+        val request = Request.Builder().url(url).header("User-Agent", "Krypton Music-AutoEQ").build()
         client.newCall(request).execute().use { response ->
             if (response.code == 404) throw NotFoundException(url)
             if (!response.isSuccessful) throw IOException("HTTP ${response.code} for $url")

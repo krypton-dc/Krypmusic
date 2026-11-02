@@ -1,4 +1,4 @@
-# Contributing to KatMusic
+# Contributing to Krypton Music
 
 Thanks for wanting to help. This document keeps contributions consistent and easy to review.
 
@@ -48,5 +48,5 @@ Participation is covered by [CODE_OF_CONDUCT.md](CODE_OF_CONDUCT.md).
 
 ## Licensing
 
-KatMusic is licensed under the GNU General Public License v3.0. By contributing you
+Krypton Music is licensed under the GNU General Public License v3.0. By contributing you
 agree that your work is distributed under the same licence.

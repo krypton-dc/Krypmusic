@@ -1,4 +1,4 @@
-# KatMusic Listen Together server
+# Krypton Music Listen Together server
 
 Node.js WebSocket room relay with Supabase persistence. It relays playback metadata and position only; every listener resolves audio independently through their own authorized provider. It does not relay audio or stream URLs.
 
@@ -71,7 +71,7 @@ Group Blend uses a **separate Supabase project** from Listen Together. Do not po
 
 ### 1. Create the Blend project
 
-1. Create a new project in the Supabase dashboard, for example `KatMusic Blend`.
+1. Create a new project in the Supabase dashboard, for example `Krypton Music Blend`.
 2. Choose a region close to most of your users.
 3. Save the database password in your password manager. It is not needed in the Android app.
 4. Open **Project Settings → API** (or **API Keys**) and copy:
@@ -88,7 +88,7 @@ Group Blend uses a **separate Supabase project** from Listen Together. Do not po
    - `blend_rooms`: Blend name, owner, invite-code hash and timestamps.
    - `blend_members`: user membership and display name.
    - `blend_profiles`: compact taste profile and schema version.
-5. In **Authentication → Providers**, enable the sign-in method KatMusic will use. Blend membership is tied to an authenticated Supabase user; a display name or invite code is not an identity.
+5. In **Authentication → Providers**, enable the sign-in method Krypton Music will use. Blend membership is tied to an authenticated Supabase user; a display name or invite code is not an identity.
 
 The migration enables RLS, grants only the required client operations, and creates authenticated RPCs for creating and joining a Blend. Invite codes are stored as SHA-256 hashes. The profile payload is capped at 64 KiB. Membership is limited to 10 people per Blend.
 

@@ -18,7 +18,7 @@ import java.util.concurrent.atomic.AtomicLong
  * debuggable builds so production logging remains clean and lightweight.
  */
 object PlaybackDiagnostics {
-    private const val TAG = "KatMusicAudio"
+    private const val TAG = "Krypton MusicAudio"
     private const val MAX_EVENTS = 96
     private const val MAX_MESSAGE_LENGTH = 220
 

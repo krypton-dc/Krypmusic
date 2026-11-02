@@ -166,7 +166,7 @@ internal data class PersistedPlaybackSession(
     val queue: List<PlayableTrack>,
     val currentIndex: Int,
     val positionMs: Long,
-    val sourceLabel: String = "KatMusic",
+    val sourceLabel: String = "Krypton Music",
     val isEndlessQueue: Boolean = false,
     val shuffleEnabled: Boolean = false,
     val repeatMode: Int = Player.REPEAT_MODE_OFF,
@@ -180,7 +180,7 @@ data class MusicPlayerState(
     val current: PlayableTrack? = null,
     val queue: List<PlayableTrack> = emptyList(),
     val currentIndex: Int = -1,
-    val sourceLabel: String = "KatMusic",
+    val sourceLabel: String = "Krypton Music",
     val isEndlessQueue: Boolean = false,
     val isPlaying: Boolean = false,
     val isBuffering: Boolean = false,
@@ -218,7 +218,7 @@ data class MusicPlayerState(
  */
 data class PlaybackChromeState(
     val current: PlayableTrack? = null,
-    val sourceLabel: String = "KatMusic",
+    val sourceLabel: String = "Krypton Music",
     val isPlaying: Boolean = false,
     val isBuffering: Boolean = false,
     val queueSize: Int = 0,
@@ -283,7 +283,7 @@ class MusicPlayer @Inject constructor(
     private val streamResolutionWakeLock by lazy {
         (appContext.getSystemService(Context.POWER_SERVICE) as? PowerManager)?.newWakeLock(
             PowerManager.PARTIAL_WAKE_LOCK,
-            "KatMusic:StreamResolutionWakeLock",
+            "Krypton Music:StreamResolutionWakeLock",
         )?.apply { setReferenceCounted(false) }
     }
     private val extractorsFactory: ExtractorsFactory by lazy {
@@ -2287,7 +2287,7 @@ class MusicPlayer @Inject constructor(
 
     fun play(
         track: PlayableTrack,
-        sourceLabel: String = "KatMusic",
+        sourceLabel: String = "Krypton Music",
         startRadio: Boolean = true,
         startPositionMs: Long = 0L,
     ) {
@@ -2320,7 +2320,7 @@ class MusicPlayer @Inject constructor(
     fun playQueue(
         tracks: List<PlayableTrack>,
         startIndex: Int = 0,
-        sourceLabel: String = "KatMusic",
+        sourceLabel: String = "Krypton Music",
         startShuffled: Boolean = false,
         enableRadioContinuation: Boolean = false,
     ) {
@@ -2377,7 +2377,7 @@ class MusicPlayer @Inject constructor(
         tracks: List<PlayableTrack>,
         startIndex: Int,
         endlessDiscover: Boolean,
-        sourceLabel: String = if (endlessDiscover) "Discover" else "KatMusic",
+        sourceLabel: String = if (endlessDiscover) "Discover" else "Krypton Music",
         startShuffled: Boolean = false,
         enableRadioContinuation: Boolean = false,
     ) {

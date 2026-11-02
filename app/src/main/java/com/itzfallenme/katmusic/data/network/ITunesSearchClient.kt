@@ -169,7 +169,7 @@ class ITunesSearchClient @Inject constructor(
     }
 
     companion object {
-        private const val USER_AGENT = "KatMusic"
+        private const val USER_AGENT = "Krypton Music"
         private const val MAX_DURATION_DIFF_MS = 12_000L
     }
 }

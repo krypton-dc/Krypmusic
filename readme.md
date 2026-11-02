@@ -1,15 +1,15 @@
 <div align="center">
 
-<img src="katmusic_logo.png" width="144" alt="KatMusic logo">
+<img src="katmusic_logo.png" width="144" alt="Krypton Music logo">
 
-# KatMusic
+# Krypton Music
 
 ### Your music, with room to make it yours.
 
 A native Android music player built around YouTube Music, with synced lyrics, offline downloads, a powerful audio engine and a highly customisable player.
 
 <p>
-  <a href="https://github.com/Arct-Development/KatMusic/releases/tag/2.5.0"><strong>Download v2.5.0</strong></a>
+  <a href="https://github.com/Arct-Development/Krypton Music/releases/tag/2.5.0"><strong>Download v2.5.0</strong></a>
   &nbsp;·&nbsp;
   <a href="https://katmusic.pages.dev">Project website</a>
   &nbsp;·&nbsp;
@@ -17,11 +17,11 @@ A native Android music player built around YouTube Music, with synced lyrics, of
 </p>
 
 
-[![Downloads](https://img.shields.io/github/downloads/Arct-Development/KatMusic/total?display_name=tag)](https://github.com/Arct-Development/KatMusic/releases)
-[![Android CI](https://github.com/Arct-Development/KatMusic/actions/workflows/android.yml/badge.svg?branch=main)](https://github.com/Arct-Development/KatMusic/actions/workflows/android.yml)
-[![Latest release](https://img.shields.io/github/v/release/Arct-Development/KatMusic?display_name=tag)](https://github.com/Arct-Development/KatMusic/releases)
-[![License: GPL-3.0](https://img.shields.io/github/license/Arct-Development/KatMusic)](LICENSE)
-[![Stars](https://img.shields.io/github/stars/Arct-Development/KatMusic?style=social)](https://github.com/Arct-Development/KatMusic/stargazers)
+[![Downloads](https://img.shields.io/github/downloads/Arct-Development/Krypton Music/total?display_name=tag)](https://github.com/Arct-Development/Krypton Music/releases)
+[![Android CI](https://github.com/Arct-Development/Krypton Music/actions/workflows/android.yml/badge.svg?branch=main)](https://github.com/Arct-Development/Krypton Music/actions/workflows/android.yml)
+[![Latest release](https://img.shields.io/github/v/release/Arct-Development/Krypton Music?display_name=tag)](https://github.com/Arct-Development/Krypton Music/releases)
+[![License: GPL-3.0](https://img.shields.io/github/license/Arct-Development/Krypton Music)](LICENSE)
+[![Stars](https://img.shields.io/github/stars/Arct-Development/Krypton Music?style=social)](https://github.com/Arct-Development/Krypton Music/stargazers)
 
 **Kotlin · Jetpack Compose · Material 3 · C++ · Oboe**
 
@@ -31,7 +31,7 @@ A native Android music player built around YouTube Music, with synced lyrics, of
 
 ## About
 
-KatMusic brings streaming, your personal library and advanced playback controls into one Android app. It combines a Compose interface with a native audio engine, so everyday listening and deeper audio controls live in the same place.
+Krypton Music brings streaming, your personal library and advanced playback controls into one Android app. It combines a Compose interface with a native audio engine, so everyday listening and deeper audio controls live in the same place.
 
 Some integrations require you to sign in or provide your own service credentials. Optional AI features use the endpoint and API key you configure.
 
@@ -88,7 +88,7 @@ Some integrations require you to sign in or provide your own service credentials
 - A visible download queue with progress, cancel and retry.
 - Wi-Fi-only downloads that pause on mobile data and resume when Wi-Fi returns.
 - Saved artwork, lyrics and audio metadata where the source and format support them.
-- Downloads are organised under <code>Music/KatMusic</code>.
+- Downloads are organised under <code>Music/Krypton Music</code>.
 
 ### Integrations
 
@@ -110,7 +110,7 @@ Choose the expanded player layout in **Settings → Playback & UI → Player Sty
 
 | Style | What it does |
 | --- | --- |
-| **Classic** | KatMusic's full player with its tabs, queue and advanced controls. |
+| **Classic** | Krypton Music's full player with its tabs, queue and advanced controls. |
 | **Poster** | Large circular artwork with expressive track text and synced lyric context. |
 | **Timeline** | A progress-led layout with a colour split and oversized timestamps. |
 | **Lyrics** | An expressive lyrics-focused view with timed syllable highlighting. |
@@ -136,22 +136,22 @@ The Poster, Timeline and expressive Lyrics concepts are adapted from [Mochy Musi
 
 ## Download and install
 
-**Latest stable release: [KatMusic 2.5.0](https://github.com/Arct-Development/KatMusic/releases/tag/2.5.0)**
+**Latest stable release: [Krypton Music 2.5.0](https://github.com/Arct-Development/Krypton Music/releases/tag/2.5.0)**
 
 Choose the package that matches your device:
 
 | Package | Android version | Recommended for |
 | --- | --- | --- |
-| [Universal APK](https://github.com/Arct-Development/KatMusic/releases/download/2.5.0/KatMusic-v2.5.0-universal.apk) | Android 10+ | Most devices. Recommended for normal installation. |
-| [ARM64 APK](https://github.com/Arct-Development/KatMusic/releases/download/2.5.0/KatMusic-v2.5.0-arm64-v8a.apk) | Android 10+ | 64-bit ARM phones and tablets. |
-| [Legacy APK](https://github.com/Arct-Development/KatMusic/releases/download/2.5.0/KatMusic-v2.5.0-android7.apk) | Android 7–9 | Older supported devices. Some visual effects and media controls use legacy alternatives. |
-| [Uncompressed universal APK](https://github.com/Arct-Development/KatMusic/releases/download/2.5.0/KatMusic-v2.5.0-universal-uncompressed.apk) | Android 10+ | Larger, uncompressed package for troubleshooting and testing. |
+| [Universal APK](https://github.com/Arct-Development/Krypton Music/releases/download/2.5.0/Krypton Music-v2.5.0-universal.apk) | Android 10+ | Most devices. Recommended for normal installation. |
+| [ARM64 APK](https://github.com/Arct-Development/Krypton Music/releases/download/2.5.0/Krypton Music-v2.5.0-arm64-v8a.apk) | Android 10+ | 64-bit ARM phones and tablets. |
+| [Legacy APK](https://github.com/Arct-Development/Krypton Music/releases/download/2.5.0/Krypton Music-v2.5.0-android7.apk) | Android 7–9 | Older supported devices. Some visual effects and media controls use legacy alternatives. |
+| [Uncompressed universal APK](https://github.com/Arct-Development/Krypton Music/releases/download/2.5.0/Krypton Music-v2.5.0-universal-uncompressed.apk) | Android 10+ | Larger, uncompressed package for troubleshooting and testing. |
 
 1. Download the APK that matches your device.
 2. Open the downloaded file and approve installation when Android asks.
-3. Launch KatMusic and configure account access or optional integrations from Settings.
+3. Launch Krypton Music and configure account access or optional integrations from Settings.
 
-You can also download the [SHA-256 checksums](https://github.com/Arct-Development/KatMusic/releases/download/2.5.0/SHA256SUMS.txt) to verify a package, or browse [all releases](https://github.com/Arct-Development/KatMusic/releases).
+You can also download the [SHA-256 checksums](https://github.com/Arct-Development/Krypton Music/releases/download/2.5.0/SHA256SUMS.txt) to verify a package, or browse [all releases](https://github.com/Arct-Development/Krypton Music/releases).
 
 ## Build from source
 
@@ -165,8 +165,8 @@ You can also download the [SHA-256 checksums](https://github.com/Arct-Developmen
 ### Clone and build
 
 ```bash
-git clone https://github.com/Arct-Development/KatMusic.git
-cd KatMusic
+git clone https://github.com/Arct-Development/Krypton Music.git
+cd Krypton Music
 
 # Build a debug APK
 ./gradlew :app:assembleDebug
@@ -184,7 +184,7 @@ The debug APK is generated at:
 
 ### Release signing
 
-Release builds require your own signing key. KatMusic deliberately refuses to create a release APK with a temporary debug key, because an incorrectly signed update would not install over the existing app.
+Release builds require your own signing key. Krypton Music deliberately refuses to create a release APK with a temporary debug key, because an incorrectly signed update would not install over the existing app.
 
 For a local build, copy [.env.example](.env.example) to <code>.env</code> and set the signing values:
 
@@ -208,7 +208,7 @@ For the CI build and contribution workflow, see [CONTRIBUTING.md](CONTRIBUTING.m
 | <code>app/src/main/java/.../ui/</code> | Compose screens, components, player and theming. |
 | <code>app/src/main/cpp/</code> | Native audio engine and DSP implementation. |
 | <code>audio/</code> | Native audio support modules. |
-| <code>website/</code> | KatMusic project website. |
+| <code>website/</code> | Krypton Music project website. |
 | <code>third_party/</code> | Third-party source and licence notices. |
 | <code>tools/</code> | Build and development utilities. |
 
@@ -222,7 +222,7 @@ For the CI build and contribution workflow, see [CONTRIBUTING.md](CONTRIBUTING.m
 
 ## Privacy and security
 
-- KatMusic does not bundle an analytics or advertising-tracking SDK.
+- Krypton Music does not bundle an analytics or advertising-tracking SDK.
 - Network requests go to the catalogue, lyric and integration services needed for the features you use.
 - Account sessions and locally configured credentials are stored on-device; do not include them in bug reports or commits.
 - Optional integrations such as Last.fm, Discord and AI recommendations are controlled by your settings. AI requests are sent to the endpoint you configure.
@@ -242,7 +242,7 @@ Please also read the [Code of Conduct](CODE_OF_CONDUCT.md).
 
 ## Credits
 
-KatMusic builds on the work of many open-source projects and services:
+Krypton Music builds on the work of many open-source projects and services:
 
 - **[Mochy Music](https://github.com/InlitX/Mochy-Music)** by [InlitX](https://github.com/InlitX) — source and design inspiration for the Poster, Timeline and expressive Lyrics player styles. Original files and GPL-3.0 licence: [third_party/Mochy-Music](third_party/Mochy-Music/README.md).
 - **[SimpMusic](https://github.com/maxrave-dev/SimpMusic)** — lyrics-provider and integration reference.
@@ -258,13 +258,13 @@ Lyrics may be supplied by LRCLIB, Apple Music, YouTube Music and other providers
 
 ## License
 
-KatMusic is licensed under the **GNU General Public License v3.0**. See [LICENSE](LICENSE).
+Krypton Music is licensed under the **GNU General Public License v3.0**. See [LICENSE](LICENSE).
 
 Third-party code remains subject to its own notices and licence terms. In particular, Mochy Music's preserved source is covered by the GPL-3.0 licence included at [third_party/Mochy-Music/LICENSE](third_party/Mochy-Music/LICENSE).
 
 ## Disclaimer
 
-KatMusic is an independent, third-party project. It is not affiliated with, endorsed by or officially connected to Google or YouTube. YouTube and YouTube Music are trademarks of Google LLC.
+Krypton Music is an independent, third-party project. It is not affiliated with, endorsed by or officially connected to Google or YouTube. YouTube and YouTube Music are trademarks of Google LLC.
 
 ---
 
@@ -272,6 +272,6 @@ KatMusic is an independent, third-party project. It is not affiliated with, endo
 
 **Made by [Arct Development](https://github.com/Arct-Development)**
 
-[Website](https://katmusic.pages.dev) · [Releases](https://github.com/Arct-Development/KatMusic/releases) · [Issues](https://github.com/Arct-Development/KatMusic/issues)
+[Website](https://katmusic.pages.dev) · [Releases](https://github.com/Arct-Development/Krypton Music/releases) · [Issues](https://github.com/Arct-Development/Krypton Music/issues)
 
 </div>

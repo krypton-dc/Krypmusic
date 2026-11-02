@@ -463,7 +463,7 @@ object SettingsSearchIndex {
             add(
                 SettingsEntry(
                     id = "appearance.katmusic_theme",
-                    title = "KatMusic Signature Theme",
+                    title = "Krypton Music Signature Theme",
                     subtitle = "Bespoke logo palette with Electric Lime and Obsidian Teal",
                     keywords = listOf(
                         "katmusic theme", "brand theme", "special theme", "logo theme", "lime",
@@ -911,7 +911,7 @@ object SettingsSearchIndex {
                 SettingsEntry(
                     id = "youtube.shown_playlists",
                     title = "Show / Hide Account Playlists",
-                    subtitle = "Control which playlists from your YouTube account appear in KatMusic",
+                    subtitle = "Control which playlists from your YouTube account appear in Krypton Music",
                     keywords = listOf(
                         "show playlists", "hide playlists", "visibility", "account playlists",
                         "library visibility", "filter playlists"
@@ -1262,7 +1262,7 @@ object SettingsSearchIndex {
                 SettingsEntry(
                     id = "backup.restore",
                     title = "Restore from Backup",
-                    subtitle = "Import a previously saved KatMusic backup file to restore settings & playlists",
+                    subtitle = "Import a previously saved Krypton Music backup file to restore settings & playlists",
                     keywords = listOf(
                         "restore", "import backup", "recover data", "load backup", "restore playlists",
                         "restore settings", "json restore"
@@ -1369,7 +1369,7 @@ object SettingsSearchIndex {
             add(
                 SettingsEntry(
                     id = "about.website",
-                    title = "KatMusic website",
+                    title = "Krypton Music website",
                     subtitle = "Open katmusic.pages.dev",
                     keywords = listOf("website", "web", "homepage", "project site", "katmusic.pages.dev"),
                     icon = Icons.Filled.Language,
@@ -1385,7 +1385,7 @@ object SettingsSearchIndex {
                 SettingsEntry(
                     id = "about.source_code",
                     title = "Open Source Code",
-                    subtitle = "View repository at github.com/Arct-Development/KatMusic",
+                    subtitle = "View repository at github.com/Arct-Development/Krypton Music",
                     keywords = listOf(
                         "source code", "github", "open source", "repository", "gpl", "license",
                         "contribute", "git"

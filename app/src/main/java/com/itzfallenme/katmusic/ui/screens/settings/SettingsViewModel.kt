@@ -503,7 +503,7 @@ class SettingsViewModel @Inject constructor(
     // ── Appearance (§8.2 / §8.3 / §8.4) ──
 
     fun setThemeMode(mode: ThemeMode) = launchSettingsAction("update theme mode") { themeRepository.setThemeMode(mode) }
-    fun setKatMusicTheme(enabled: Boolean) = launchSettingsAction("update KatMusic signature theme") { themeRepository.setKatMusicTheme(enabled) }
+    fun setKatMusicTheme(enabled: Boolean) = launchSettingsAction("update Krypton Music signature theme") { themeRepository.setKatMusicTheme(enabled) }
     fun setAmoled(enabled: Boolean) = launchSettingsAction("update AMOLED mode") { themeRepository.setAmoled(enabled) }
     fun setLiquidGlass(enabled: Boolean) = launchSettingsAction("update Liquid Glass") { themeRepository.setLiquidGlass(enabled) }
     fun setMd3NavBar(enabled: Boolean) = launchSettingsAction("update MD3 Navigation Bar") { themeRepository.setMd3NavBar(enabled) }
@@ -982,7 +982,7 @@ class SettingsViewModel @Inject constructor(
 
     private suspend fun buildDiagnosticsReport(): String = withContext(Dispatchers.IO) {
         val sb = StringBuilder()
-        sb.appendLine("KatMusic diagnostics")
+        sb.appendLine("Krypton Music diagnostics")
         sb.appendLine("time=${java.text.SimpleDateFormat("yyyy-MM-dd HH:mm:ss", java.util.Locale.US).format(java.util.Date())}")
         val versionName = runCatching {
             context.packageManager.getPackageInfo(context.packageName, 0).versionName

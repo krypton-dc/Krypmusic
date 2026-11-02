@@ -461,7 +461,7 @@ enum class SettingsTab(
     ABOUT(
         titleRes = R.string.set_cat_about,
         subtitleRes = R.string.set_cat_about_sub,
-        title = "About KatMusic",
+        title = "About Krypton Music",
         subtitle = "Version, diagnostics and source code",
         icon = Icons.Filled.Info,
     ),
@@ -962,9 +962,9 @@ fun SettingsScreen(
                         iconContainer = MaterialTheme.colorScheme.secondaryContainer,
                         iconTint = MaterialTheme.colorScheme.onSecondaryContainer,
                         title = stringResource(R.string.settings_source_code),
-                        subtitle = "github.com/Arct-Development/KatMusic",
+                        subtitle = "github.com/Arct-Development/Krypton Music",
                         onClick = {
-                            val intent = Intent(Intent.ACTION_VIEW, Uri.parse("https://github.com/Arct-Development/KatMusic"))
+                            val intent = Intent(Intent.ACTION_VIEW, Uri.parse("https://github.com/Arct-Development/Krypton Music"))
                             if (!startActivitySafely(context, intent)) {
                                 viewModel.showToast(context.getString(R.string.toast_no_browser_plain))
                             }
@@ -976,7 +976,7 @@ fun SettingsScreen(
                         icon = Icons.Filled.Language,
                         iconContainer = MaterialTheme.colorScheme.tertiaryContainer,
                         iconTint = MaterialTheme.colorScheme.onTertiaryContainer,
-                        title = "KatMusic website",
+                        title = "Krypton Music website",
                         subtitle = "katmusic.pages.dev",
                         onClick = {
                             val intent = Intent(Intent.ACTION_VIEW, Uri.parse("https://katmusic.pages.dev"))
@@ -1752,7 +1752,7 @@ fun SettingsScreen(
                         else ->
                             if (!ytConnected) "Connect an account first"
                             else if (ytSyncEnabled) "Selected playlists mirror to your account, 24/7" + lastSyncSuffix(ytLastSyncAt)
-                            else "Keep your YT Music library in sync with KatMusic"
+                            else "Keep your YT Music library in sync with Krypton Music"
                     }
                     // Display name of the active channel: the picked entry when
                     // the channel list was loaded, otherwise the stored name.
@@ -2293,9 +2293,9 @@ fun SettingsScreen(
                                             iconContainer = MaterialTheme.colorScheme.primaryContainer,
                                             iconTint = MaterialTheme.colorScheme.onPrimaryContainer,
                                             title = stringResource(R.string.settings_source_code),
-                                            subtitle = "github.com/Arct-Development/KatMusic",
+                                            subtitle = "github.com/Arct-Development/Krypton Music",
                                             onClick = {
-                                                val intent = Intent(Intent.ACTION_VIEW, Uri.parse("https://github.com/Arct-Development/KatMusic"))
+                                                val intent = Intent(Intent.ACTION_VIEW, Uri.parse("https://github.com/Arct-Development/Krypton Music"))
                                                 if (!startActivitySafely(context, intent)) viewModel.showToast(context.getString(R.string.toast_no_browser_plain))
                                             },
                                             position = position,
@@ -2305,7 +2305,7 @@ fun SettingsScreen(
                                             icon = Icons.Filled.Language,
                                             iconContainer = MaterialTheme.colorScheme.tertiaryContainer,
                                             iconTint = MaterialTheme.colorScheme.onTertiaryContainer,
-                                            title = "KatMusic website",
+                                            title = "Krypton Music website",
                                             subtitle = "katmusic.pages.dev",
                                             onClick = {
                                                 val intent = Intent(Intent.ACTION_VIEW, Uri.parse("https://katmusic.pages.dev"))
@@ -2336,7 +2336,7 @@ fun SettingsScreen(
                             Column(verticalArrangement = Arrangement.spacedBy(12.dp)) {
                                 SectionLabel("Now playing")
                                 Text(
-                                    "Choose between the original Mochy-inspired Poster, Timeline and Lyrics layouts, plus KatMusic Artwork and Canvas styles. Your choice is saved for the next time you open Now Playing.",
+                                    "Choose between the original Mochy-inspired Poster, Timeline and Lyrics layouts, plus Krypton Music Artwork and Canvas styles. Your choice is saved for the next time you open Now Playing.",
                                     style = MaterialTheme.typography.bodyMedium,
                                     color = MaterialTheme.colorScheme.onSurfaceVariant,
                                     modifier = Modifier.padding(horizontal = 4.dp),
@@ -4683,13 +4683,13 @@ private fun AboutCard(versionName: String) {
             ) {
                 Icon(
                     painter = painterResource(R.drawable.ic_launcher_logo),
-                    contentDescription = "KatMusic",
+                    contentDescription = "Krypton Music",
                     tint = Color.Unspecified,
                     modifier = Modifier.size(72.dp),
                 )
             }
             Spacer(Modifier.height(14.dp))
-            Text("KatMusic", style = MaterialTheme.typography.headlineSmall, fontWeight = FontWeight.Bold)
+            Text("Krypton Music", style = MaterialTheme.typography.headlineSmall, fontWeight = FontWeight.Bold)
             Spacer(Modifier.height(8.dp))
             Surface(
                 shape = ExpressivePillShape,
@@ -5655,7 +5655,7 @@ private fun YouTubeLibraryVisibilitySheet(
                 Column(Modifier.weight(1f)) {
                     Text(stringResource(R.string.set_yt_shown_title), style = MaterialTheme.typography.titleLarge, fontWeight = FontWeight.Bold)
                     Text(
-                        "Choose which account playlists appear in KatMusic",
+                        "Choose which account playlists appear in Krypton Music",
                         style = MaterialTheme.typography.bodySmall,
                         color = MaterialTheme.colorScheme.onSurfaceVariant,
                     )

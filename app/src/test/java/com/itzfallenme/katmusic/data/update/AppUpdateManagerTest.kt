@@ -7,42 +7,42 @@ class AppUpdateManagerTest {
 
     private val sampleAssets = listOf(
         ReleaseAsset(
-            name = "KatMusic-v4.2.4-android7.apk",
-            downloadUrl = "https://github.com/Arct-Development/KatMusic/releases/download/4.2.4/KatMusic-v4.2.4-android7.apk",
+            name = "Krypton Music-v4.2.4-android7.apk",
+            downloadUrl = "https://github.com/Arct-Development/Krypton Music/releases/download/4.2.4/Krypton Music-v4.2.4-android7.apk",
         ),
         ReleaseAsset(
-            name = "KatMusic-v4.2.4-universal-uncompressed.apk",
-            downloadUrl = "https://github.com/Arct-Development/KatMusic/releases/download/4.2.4/KatMusic-v4.2.4-universal-uncompressed.apk",
+            name = "Krypton Music-v4.2.4-universal-uncompressed.apk",
+            downloadUrl = "https://github.com/Arct-Development/Krypton Music/releases/download/4.2.4/Krypton Music-v4.2.4-universal-uncompressed.apk",
         ),
         ReleaseAsset(
-            name = "KatMusic-v4.2.4-universal.apk",
-            downloadUrl = "https://github.com/Arct-Development/KatMusic/releases/download/4.2.4/KatMusic-v4.2.4-universal.apk",
+            name = "Krypton Music-v4.2.4-universal.apk",
+            downloadUrl = "https://github.com/Arct-Development/Krypton Music/releases/download/4.2.4/Krypton Music-v4.2.4-universal.apk",
         ),
         ReleaseAsset(
             name = "SHA256SUMS.txt",
-            downloadUrl = "https://github.com/Arct-Development/KatMusic/releases/download/4.2.4/SHA256SUMS.txt",
+            downloadUrl = "https://github.com/Arct-Development/Krypton Music/releases/download/4.2.4/SHA256SUMS.txt",
         ),
     )
 
     @Test
     fun classifyAsset_recognizesVariantsCorrectly() {
-        assertThat(AppUpdateManager.classifyAsset("KatMusic-v4.2.4-android7.apk"))
+        assertThat(AppUpdateManager.classifyAsset("Krypton Music-v4.2.4-android7.apk"))
             .isEqualTo(ApkVariant.ANDROID7)
-        assertThat(AppUpdateManager.classifyAsset("KatMusic-v4.2.4-legacy.apk"))
+        assertThat(AppUpdateManager.classifyAsset("Krypton Music-v4.2.4-legacy.apk"))
             .isEqualTo(ApkVariant.ANDROID7)
 
-        assertThat(AppUpdateManager.classifyAsset("KatMusic-v4.2.4-universal-uncompressed.apk"))
+        assertThat(AppUpdateManager.classifyAsset("Krypton Music-v4.2.4-universal-uncompressed.apk"))
             .isEqualTo(ApkVariant.UNCOMPRESSED)
-        assertThat(AppUpdateManager.classifyAsset("KatMusic-v4.2.4-raw.apk"))
+        assertThat(AppUpdateManager.classifyAsset("Krypton Music-v4.2.4-raw.apk"))
             .isEqualTo(ApkVariant.UNCOMPRESSED)
-        assertThat(AppUpdateManager.classifyAsset("KatMusic-v4.2.4-beta-raw.apk"))
+        assertThat(AppUpdateManager.classifyAsset("Krypton Music-v4.2.4-beta-raw.apk"))
             .isEqualTo(ApkVariant.UNCOMPRESSED)
 
-        assertThat(AppUpdateManager.classifyAsset("KatMusic-v4.2.4-universal.apk"))
+        assertThat(AppUpdateManager.classifyAsset("Krypton Music-v4.2.4-universal.apk"))
             .isEqualTo(ApkVariant.UNIVERSAL)
-        assertThat(AppUpdateManager.classifyAsset("KatMusic-v4.2.4-release.apk"))
+        assertThat(AppUpdateManager.classifyAsset("Krypton Music-v4.2.4-release.apk"))
             .isEqualTo(ApkVariant.UNIVERSAL)
-        assertThat(AppUpdateManager.classifyAsset("KatMusic-v4.2.4-beta.apk"))
+        assertThat(AppUpdateManager.classifyAsset("Krypton Music-v4.2.4-beta.apk"))
             .isEqualTo(ApkVariant.UNIVERSAL)
     }
 
@@ -54,8 +54,8 @@ class AppUpdateManagerTest {
             sdkInt = 34, // Android 14
         )
         assertThat(selected).isNotNull()
-        assertThat(selected?.name).isEqualTo("KatMusic-v4.2.4-universal.apk")
-        assertThat(selected?.downloadUrl).contains("KatMusic-v4.2.4-universal.apk")
+        assertThat(selected?.name).isEqualTo("Krypton Music-v4.2.4-universal.apk")
+        assertThat(selected?.downloadUrl).contains("Krypton Music-v4.2.4-universal.apk")
     }
 
     @Test
@@ -66,8 +66,8 @@ class AppUpdateManagerTest {
             sdkInt = 34, // Android 14
         )
         assertThat(selected).isNotNull()
-        assertThat(selected?.name).isEqualTo("KatMusic-v4.2.4-universal-uncompressed.apk")
-        assertThat(selected?.downloadUrl).contains("KatMusic-v4.2.4-universal-uncompressed.apk")
+        assertThat(selected?.name).isEqualTo("Krypton Music-v4.2.4-universal-uncompressed.apk")
+        assertThat(selected?.downloadUrl).contains("Krypton Music-v4.2.4-universal-uncompressed.apk")
     }
 
     @Test
@@ -78,8 +78,8 @@ class AppUpdateManagerTest {
             sdkInt = 26, // Android 8.0 Oreo
         )
         assertThat(selected).isNotNull()
-        assertThat(selected?.name).isEqualTo("KatMusic-v4.2.4-android7.apk")
-        assertThat(selected?.downloadUrl).contains("KatMusic-v4.2.4-android7.apk")
+        assertThat(selected?.name).isEqualTo("Krypton Music-v4.2.4-android7.apk")
+        assertThat(selected?.downloadUrl).contains("Krypton Music-v4.2.4-android7.apk")
     }
 
     @Test
@@ -99,8 +99,8 @@ class AppUpdateManagerTest {
     @Test
     fun selectBestAsset_fallbackWhenUniversalMissing_fallsBackToUncompressedOrAndroid7() {
         val assetsWithoutUniversal = listOf(
-            ReleaseAsset(name = "KatMusic-v4.2.4-android7.apk", downloadUrl = "https://example.com/a7"),
-            ReleaseAsset(name = "KatMusic-v4.2.4-universal-uncompressed.apk", downloadUrl = "https://example.com/raw"),
+            ReleaseAsset(name = "Krypton Music-v4.2.4-android7.apk", downloadUrl = "https://example.com/a7"),
+            ReleaseAsset(name = "Krypton Music-v4.2.4-universal-uncompressed.apk", downloadUrl = "https://example.com/raw"),
         )
         val selected = AppUpdateManager.selectBestAsset(
             assets = assetsWithoutUniversal,
@@ -108,6 +108,6 @@ class AppUpdateManagerTest {
             sdkInt = 34,
         )
         assertThat(selected).isNotNull()
-        assertThat(selected?.name).isEqualTo("KatMusic-v4.2.4-universal-uncompressed.apk")
+        assertThat(selected?.name).isEqualTo("Krypton Music-v4.2.4-universal-uncompressed.apk")
     }
 }

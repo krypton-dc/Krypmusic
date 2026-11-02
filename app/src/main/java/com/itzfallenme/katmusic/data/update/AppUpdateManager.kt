@@ -102,9 +102,9 @@ class AppUpdateManager @Inject constructor(
             }
             try {
                 val request = Request.Builder()
-                    .url("https://api.github.com/repos/Arct-Development/KatMusic/releases/latest")
+                    .url("https://api.github.com/repos/Arct-Development/Krypton Music/releases/latest")
                     .header("Accept", "application/vnd.github.v3+json")
-                    .header("User-Agent", "KatMusic-Android")
+                    .header("User-Agent", "Krypton Music-Android")
                     .build()
 
                 val response = withContext(Dispatchers.IO) {
@@ -125,7 +125,7 @@ class AppUpdateManager @Inject constructor(
                 val body = response.body?.string().orEmpty()
                 val json = JSONObject(body)
                 val tagName = json.optString("tag_name", "")
-                val releaseUrl = json.optString("html_url", "https://github.com/Arct-Development/KatMusic/releases")
+                val releaseUrl = json.optString("html_url", "https://github.com/Arct-Development/Krypton Music/releases")
                 val releaseNotes = json.optString("body", "")
 
                 val apkAssets = mutableListOf<ReleaseAsset>()
@@ -190,7 +190,7 @@ class AppUpdateManager @Inject constructor(
 
     fun openUpdate(context: Context) {
         val targetUrl = _updateInfo.value.downloadUrl ?: _updateInfo.value.releaseUrl.ifBlank {
-            "https://github.com/Arct-Development/KatMusic/releases"
+            "https://github.com/Arct-Development/Krypton Music/releases"
         }
         val intent = Intent(Intent.ACTION_VIEW, Uri.parse(targetUrl)).apply {
             addFlags(Intent.FLAG_ACTIVITY_NEW_TASK)

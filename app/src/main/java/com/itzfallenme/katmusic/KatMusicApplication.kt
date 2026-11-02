@@ -95,7 +95,7 @@ class KatMusicApplication : Application(), ImageLoaderFactory {
                 }?.forEach { file -> runCatching { file.delete() } }
             }
             runCatching { likedSongsManager.get().start() }
-                .onFailure { com.itzfallenme.katmusic.diagnostics.AppLog.e("KatMusicStartup", "Liked Songs startup disabled", it) }
+                .onFailure { com.itzfallenme.katmusic.diagnostics.AppLog.e("Krypton MusicStartup", "Liked Songs startup disabled", it) }
         }
         // Never create BotGuard's headless WebView during app launch. Some
         // Android 11 OEM devices have a missing/updating WebView provider,
@@ -105,7 +105,7 @@ class KatMusicApplication : Application(), ImageLoaderFactory {
         applicationScope.launch {
             delay(OPTIONAL_STARTUP_DELAY_MS)
             runCatching { ytMusicSyncManager.get().start() }
-                .onFailure { com.itzfallenme.katmusic.diagnostics.AppLog.e("KatMusicStartup", "YT sync startup disabled", it) }
+                .onFailure { com.itzfallenme.katmusic.diagnostics.AppLog.e("Krypton MusicStartup", "YT sync startup disabled", it) }
         }
         // YouTube Music playback-history sync (no-ops until an account is
         // connected AND history sync is enabled in Settings — on by default).
@@ -113,7 +113,7 @@ class KatMusicApplication : Application(), ImageLoaderFactory {
         applicationScope.launch {
             delay(OPTIONAL_STARTUP_DELAY_MS)
             runCatching { ytMusicHistorySyncManager.get().start() }
-                .onFailure { com.itzfallenme.katmusic.diagnostics.AppLog.e("KatMusicStartup", "YT history sync startup disabled", it) }
+                .onFailure { com.itzfallenme.katmusic.diagnostics.AppLog.e("Krypton MusicStartup", "YT history sync startup disabled", it) }
         }
         // Reconcile public download directory & MediaStore with local database
         // asynchronously on startup so offline playback works immediately.
@@ -121,7 +121,7 @@ class KatMusicApplication : Application(), ImageLoaderFactory {
             delay(OPTIONAL_STARTUP_DELAY_MS)
             runCatching { trackDownloadManager.get().restoreDownloadsAfterReinstall() }
             runCatching { trackDownloadManager.get().syncDownloadsFromStorage() }
-                .onFailure { com.itzfallenme.katmusic.diagnostics.AppLog.e("KatMusicStartup", "Download sync startup failed", it) }
+                .onFailure { com.itzfallenme.katmusic.diagnostics.AppLog.e("Krypton MusicStartup", "Download sync startup failed", it) }
         }
         // Discord Rich Presence (no-ops unless the switch is on AND the Discord
         // app is installed and signed in). Observes playback state only; it can
@@ -130,7 +130,7 @@ class KatMusicApplication : Application(), ImageLoaderFactory {
         applicationScope.launch {
             delay(OPTIONAL_STARTUP_DELAY_MS)
             runCatching { discordPresenceManager.get().start() }
-                .onFailure { com.itzfallenme.katmusic.diagnostics.AppLog.e("KatMusicStartup", "Discord presence startup disabled", it) }
+                .onFailure { com.itzfallenme.katmusic.diagnostics.AppLog.e("Krypton MusicStartup", "Discord presence startup disabled", it) }
         }
         // A widget is a separate RemoteViews surface, so it needs an explicit
         // refresh whenever KatMusic's live theme changes. The widget's palette
@@ -149,7 +149,7 @@ class KatMusicApplication : Application(), ImageLoaderFactory {
             } catch (cancellation: CancellationException) {
                 throw cancellation
             } catch (error: Throwable) {
-                com.itzfallenme.katmusic.diagnostics.AppLog.e("KatMusicStartup", "Widget theme observer disabled", error)
+                com.itzfallenme.katmusic.diagnostics.AppLog.e("Krypton MusicStartup", "Widget theme observer disabled", error)
             }
         }
         StartupTrail.mark("app.onCreate.end")
@@ -185,10 +185,10 @@ class KatMusicApplication : Application(), ImageLoaderFactory {
             .readTimeout(10, java.util.concurrent.TimeUnit.SECONDS)
             .build()
         } catch (error: Exception) {
-            com.itzfallenme.katmusic.diagnostics.AppLog.e("KatMusicStartup", "Shared artwork client unavailable; using isolated client", error)
+            com.itzfallenme.katmusic.diagnostics.AppLog.e("Krypton MusicStartup", "Shared artwork client unavailable; using isolated client", error)
             okhttp3.OkHttpClient.Builder().build()
         } catch (error: LinkageError) {
-            com.itzfallenme.katmusic.diagnostics.AppLog.e("KatMusicStartup", "Shared artwork client unsupported; using isolated client", error)
+            com.itzfallenme.katmusic.diagnostics.AppLog.e("Krypton MusicStartup", "Shared artwork client unsupported; using isolated client", error)
             okhttp3.OkHttpClient.Builder().build()
         }
 

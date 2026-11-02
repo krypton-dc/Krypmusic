@@ -242,7 +242,7 @@ class GroupBlendViewModel @Inject constructor(
         val code = rawCode.trim().replace("\\s".toRegex(), "")
         if (displayName.isBlank()) return setError("Enter your friend's display name.")
         if (code.length > 48_000) return setError("That share code is too large.")
-        if (!code.startsWith(BlendSharePayload.PREFIX)) return setError("That isn't a KatMusic Blend code.")
+        if (!code.startsWith(BlendSharePayload.PREFIX)) return setError("That isn't a Krypton Music Blend code.")
         try {
             val bytes = Base64.decode(
                 code.removePrefix(BlendSharePayload.PREFIX),
@@ -295,7 +295,7 @@ class GroupBlendViewModel @Inject constructor(
     private fun publishState() {
         val members = listOf(BlendMemberProfile("you", "You", myProfile)) + importedMembers.values
         val result = GroupBlendEngine.calculate(members)
-        val payload = BlendSharePayload(displayName = "KatMusic listener", profile = myProfile)
+        val payload = BlendSharePayload(displayName = "Krypton Music listener", profile = myProfile)
         val code = BlendSharePayload.PREFIX + Base64.encodeToString(
             json.encodeToString(payload).encodeToByteArray(),
             Base64.URL_SAFE or Base64.NO_WRAP or Base64.NO_PADDING,

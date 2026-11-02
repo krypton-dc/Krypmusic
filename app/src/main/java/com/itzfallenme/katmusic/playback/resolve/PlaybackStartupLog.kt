@@ -131,5 +131,5 @@ object PlaybackStartupLog {
         return (android.os.SystemClock.elapsedRealtime() - startMs).coerceAtLeast(0L)
     }
 
-    private const val TAG = "KatMusicStartup"
+    private const val TAG = "Krypton MusicStartup"
 }

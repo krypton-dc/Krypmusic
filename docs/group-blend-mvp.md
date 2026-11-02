@@ -1,11 +1,11 @@
-# KatMusic Group Blend
+# Krypton Music Group Blend
 
 Group Blend is a Spotify-independent taste-matching feature built from
-KatMusic's own local listening statistics.
+Krypton Music's own local listening statistics.
 
 ## How it works
 
-1. KatMusic reads the local `song_play_stats` table.
+1. Krypton Music reads the local `song_play_stats` table.
 2. `BlendTasteProfileBuilder` converts play time, completed plays, skips,
    and recency into normalized artist and track affinities.
 3. Each person copies their own compact `KATBLEND1:` share code and sends it
@@ -32,7 +32,7 @@ KatMusic's own local listening statistics.
 Compatibility is the average pairwise cosine similarity between each pair of
 members' normalized artist and track vectors (75% artist, 25% track). Group
 recommendations reward both average affinity and the proportion of members
-whose profiles contain a track. This is KatMusic's own transparent heuristic,
+whose profiles contain a track. This is Krypton Music's own transparent heuristic,
 not a reproduction of Spotify's proprietary Blend algorithm.
 
 ## Tests

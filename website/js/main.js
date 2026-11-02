@@ -1,6 +1,6 @@
 (() => {
   "use strict";
-  const REPO = "Arct-Development/KatMusic", API = `https://api.github.com/repos/${REPO}/releases?per_page=100`;
+  const REPO = "Arct-Development/Krypton Music", API = `https://api.github.com/repos/${REPO}/releases?per_page=100`;
   const $ = (s, r = document) => r.querySelector(s), $$ = (s, r = document) => [...r.querySelectorAll(s)];
   const reduce = matchMedia("(prefers-reduced-motion: reduce)").matches;
   const STYLES = [["Classic", "Full player, tabs, queue and controls."], ["Poster", "Large circular artwork and expressive track text."], ["Timeline", "Progress-led layout with oversized timestamps."], ["Lyrics Stage", "Lyrics-focused view with synced highlighting and source controls."], ["iPod", "A compact, tactile player inspired by classic music devices."], ["Full Video", "Immersive playback with animated Canvas artwork when available."]];

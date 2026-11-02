@@ -36,7 +36,7 @@ class LocalSongsTest {
         assertThat(LocalAudioFormats.importedPathOrNull(path)).isEqualTo(path)
         assertThat(LocalAudioFormats.importedPathOrNull("file://$path")).isEqualTo(path)
         // Downloads, YouTube urls and content URIs are not imports.
-        assertThat(LocalAudioFormats.importedPathOrNull("/storage/emulated/0/Music/KatMusic/a.flac")).isNull()
+        assertThat(LocalAudioFormats.importedPathOrNull("/storage/emulated/0/Music/Krypton Music/a.flac")).isNull()
         assertThat(LocalAudioFormats.importedPathOrNull("https://music.youtube.com/watch?v=abcdefghijk")).isNull()
         assertThat(LocalAudioFormats.importedPathOrNull("content://x/local_music/a.flac")).isNull()
         assertThat(LocalAudioFormats.importedPathOrNull(null)).isNull()

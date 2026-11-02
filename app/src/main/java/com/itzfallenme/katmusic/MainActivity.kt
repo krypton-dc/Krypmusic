@@ -349,7 +349,7 @@ class MainActivity : androidx.fragment.app.FragmentActivity() {
     }
 
     private companion object {
-        const val STARTUP_TAG = "KatMusicStartup"
+        const val STARTUP_TAG = "Krypton MusicStartup"
         @Volatile
         var hasPromptedAudioThisSession = false
     }

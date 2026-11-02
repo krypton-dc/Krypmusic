@@ -86,7 +86,7 @@ class DashSegmenter @Inject constructor(
                 val headers = descriptor.headers.toMutableMap()
                 // ExoPlayer still needs a UA on the license POST.
                 if (headers.keys.none { it.equals("User-Agent", ignoreCase = true) }) {
-                    headers["User-Agent"] = "KatMusic/4.3.1"
+                    headers["User-Agent"] = "Krypton Music/4.3.1"
                 }
                 setLicenseRequestHeaders(headers)
             }

@@ -233,7 +233,7 @@ class MusixmatchLyricsApi @Inject constructor(
         return try {
             val request = Request.Builder()
                 .url(url)
-                .header("User-Agent", "KatMusic-Android/1.0 (https://github.com/Arct-Development/KatMusic)")
+                .header("User-Agent", "Krypton Music-Android/1.0 (https://github.com/Arct-Development/Krypton Music)")
                 .header("Accept", "application/json")
                 .get()
                 .build()

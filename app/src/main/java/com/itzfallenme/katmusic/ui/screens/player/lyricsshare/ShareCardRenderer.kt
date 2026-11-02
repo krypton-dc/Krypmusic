@@ -544,8 +544,8 @@ object ShareCardRenderer {
         // Draw tintable logo mark
         drawLogoMark(canvas, context, x + (logoSize / 2f), footerY - (logoSize / 2f), logoSize, brandColor)
 
-        // Draw "KatMusic" text aligned horizontally with logo
-        val brandName = "KatMusic"
+        // Draw "Krypton Music" text aligned horizontally with logo
+        val brandName = "Krypton Music"
         val textX = x + logoSize + gap
         val textY = footerY - (logoSize * 0.18f)
         canvas.drawText(brandName, textX, textY, textPaint)

@@ -1486,7 +1486,7 @@ class StreamApi @Inject constructor(
     suspend fun createRemotePlaylist(title: String): String? = withContext(Dispatchers.IO) {
         if (!ytAuth.connection.value.isConnected) return@withContext null
         val cleanTitle = title.replace("<", "(").replace(">", ")").take(150)
-            .ifBlank { "KatMusic Playlist" }
+            .ifBlank { "Krypton Music Playlist" }
         val config = getWebConfig()
         val root = runCatching {
             post(
@@ -5153,8 +5153,8 @@ class StreamApi @Inject constructor(
         const val FALLBACK_TOKEN_SESSION = "katmusic_session"
         const val NEWPIPE_SOURCE = "NEWPIPE"
         const val ANONYMOUS_AUTH_SCOPE = "anonymous"
-        const val STREAM_LOG_TAG = "KatMusicStream"
-        const val PLAYLIST_LOG_TAG = "KatMusicPlaylist"
+        const val STREAM_LOG_TAG = "Krypton MusicStream"
+        const val PLAYLIST_LOG_TAG = "Krypton MusicPlaylist"
         const val WEB_USER_AGENT = "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:140.0) Gecko/20100101 Firefox/140.0"
         const val FALLBACK_WEB_KEY = "AIzaSyC9XL3ZjWddXya6X74dJoCTL-WEYFDNX30"
         const val FALLBACK_WEB_VERSION = "1.20260707.12.00"

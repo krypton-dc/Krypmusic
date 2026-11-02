@@ -316,7 +316,7 @@ fun TrackContextMenuSheet(
     capabilities: TrackMenuCapabilities,
     playableTrack: PlayableTrack? = null,
     onDismiss: () -> Unit,
-    playbackSourceLabel: String = "KatMusic",
+    playbackSourceLabel: String = "Krypton Music",
     onPlayInKatMusic: (() -> Unit)? = null,
     onStartMix: ((trackName: String, artistName: String) -> Unit)? = null,
     onExploreGenre: ((genre: String) -> Unit)? = null,

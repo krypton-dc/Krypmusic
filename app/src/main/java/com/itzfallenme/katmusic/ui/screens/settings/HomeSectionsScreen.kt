@@ -297,7 +297,7 @@ fun HomeSectionsScreen(
             )
 
             Text(
-                text = "Reorder sections up/down, pin favorites to top, and toggle visibility for both KatMusic and YouTube Music shelves.",
+                text = "Reorder sections up/down, pin favorites to top, and toggle visibility for both Krypton Music and YouTube Music shelves.",
                 style = MaterialTheme.typography.bodySmall,
                 color = MaterialTheme.colorScheme.onSurfaceVariant,
                 modifier = Modifier.padding(horizontal = 20.dp, vertical = 6.dp),

@@ -201,7 +201,7 @@ class LyricsPlusLyricsApi @Inject constructor(
     }
 
     companion object {
-        private const val USER_AGENT = "KatMusic-Android/1.0 (https://github.com/Arct-Development/KatMusic)"
+        private const val USER_AGENT = "Krypton Music-Android/1.0 (https://github.com/Arct-Development/Krypton Music)"
 
         private val MIRRORS = listOf(
             "https://lyricsplus.prjktla.my.id",

@@ -309,7 +309,7 @@ fun HomeScreen(
                                         shareScope.launch {
                                             runCatching {
                                                 val soundprint = SoundprintRenderer.render(insights)
-                                                shareExporter.shareImage(shareContext, soundprint, "KatMusic Soundprint")
+                                                shareExporter.shareImage(shareContext, soundprint, "Krypton Music Soundprint")
                                             }.onFailure {
                                                 Toast.makeText(shareContext, "Couldn't create your Soundprint", Toast.LENGTH_SHORT).show()
                                             }

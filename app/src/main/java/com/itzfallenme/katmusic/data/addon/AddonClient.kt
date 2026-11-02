@@ -147,10 +147,10 @@ class AddonClient(
             val useStreamIntent = !isDownload || atmos || quality.equals("atmos", ignoreCase = true)
             if (useStreamIntent) {
                 reqBuilder.header("X-LW-Intent", "stream")
-                reqBuilder.header("User-Agent", "KatMusic-Player/1.0")
+                reqBuilder.header("User-Agent", "Krypton-Music-Player/1.0")
             } else {
                 reqBuilder.header("X-LW-Intent", "download")
-                reqBuilder.header("User-Agent", "KatMusic-Downloader/1.0")
+                reqBuilder.header("User-Agent", "Krypton-Music-Downloader/1.0")
             }
             signRequest(url, "GET", reqBuilder)
             val req = reqBuilder.build()

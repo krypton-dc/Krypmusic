@@ -77,7 +77,7 @@ class DiscordPresenceTest {
     fun cardIsListeningToKatMusicWithTitleAndArtist() {
         val activity = DiscordPresence.buildActivity(state(), NOW_MS)
         assertEquals(2, activity["type"]?.jsonPrimitive?.int) // 2 = Listening
-        assertEquals("KatMusic", str(activity, "name"))
+        assertEquals("Krypton Music", str(activity, "name"))
         assertEquals("Sunglasses at Night", str(activity, "details"))
         assertEquals("Moondrop\n · Hi-Res Lossless · 24-bit · 96 kHz", str(activity, "state"))
     }
@@ -155,12 +155,12 @@ class DiscordPresenceTest {
     fun buttonsOpenTheTrackAndTheProject() {
         val buttons = DiscordPresence.buildActivity(state(), NOW_MS)["buttons"]!!.jsonArray
         assertEquals(2, buttons.size)
-        assertEquals("Listen On KatMusic", buttons[0].jsonObject["label"]?.jsonPrimitive?.content)
+        assertEquals("Listen On Krypton Music", buttons[0].jsonObject["label"]?.jsonPrimitive?.content)
         assertEquals(
             "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
             buttons[0].jsonObject["url"]?.jsonPrimitive?.content,
         )
-        assertEquals("Get KatMusic", buttons[1].jsonObject["label"]?.jsonPrimitive?.content)
+        assertEquals("Get Krypton Music", buttons[1].jsonObject["label"]?.jsonPrimitive?.content)
         assertEquals(DiscordPresence.PROJECT_URL, buttons[1].jsonObject["url"]?.jsonPrimitive?.content)
 
         // No video id (a local/downloaded file): the first button has nowhere
@@ -300,7 +300,7 @@ class DiscordPresenceTest {
                 NOW_MS,
             )["state"]?.jsonPrimitive?.content,
         )
-        assertEquals("KatMusic", DiscordPresence.stateLine("", null, "Title", ""))
+        assertEquals("Krypton Music", DiscordPresence.stateLine("", null, "Title", ""))
     }
 
     // ---- A buffer stall is not a pause ------------------------------------

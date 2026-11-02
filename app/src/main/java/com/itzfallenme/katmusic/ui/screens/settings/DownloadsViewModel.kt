@@ -315,7 +315,7 @@ class DownloadsViewModel @Inject constructor(
             downloadTreeUri.value,
         )
 
-    /** Human-readable label ("SD card › Music/KatMusic"), or null when the
+    /** Human-readable label ("SD card › Music/Krypton Music"), or null when the
      *  default location is active or the grant was lost. */
     fun describeCustomLocation(): String? =
         com.itzfallenme.katmusic.data.download.SafTreeFiles.describeLocation(

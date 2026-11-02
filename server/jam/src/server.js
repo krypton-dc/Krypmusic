@@ -451,7 +451,7 @@ heartbeat.unref();
 
 async function start() {
   await restoreRooms();
-  server.listen(PORT, "0.0.0.0", () => process.stdout.write("KatMusic Jam server listening on " + PORT + "\\n"));
+  server.listen(PORT, "0.0.0.0", () => process.stdout.write("Krypton Music Jam server listening on " + PORT + "\\n"));
 }
 function shutdown() {
   if (shuttingDown) return;

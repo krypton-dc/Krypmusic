@@ -1,6 +1,6 @@
 # Changelog
 
-All notable changes to KatMusic are documented here. The format follows
+All notable changes to Krypton Music are documented here. The format follows
 [Keep a Changelog](https://keepachangelog.com/en/1.1.0/) and the project uses
 [semantic versioning](https://semver.org/).
 
@@ -12,7 +12,7 @@ All notable changes to KatMusic are documented here. The format follows
 - Reconnection support using room session tokens, plus bounded room activity events.
 - A production Listen Together server endpoint is prefilled in the app: `wss://katmusic.onrender.com/ws`.
 - Regression coverage for lossless quality fallback ordering, including strict YouTube selection, Hi-Res downshift, and explicit-only Atmos / Data Saver tiers.
-- A responsive website screenshot gallery using real KatMusic Android screenshots, with static export configured for Cloudflare Pages.
+- A responsive website screenshot gallery using real Krypton Music Android screenshots, with static export configured for Cloudflare Pages.
 
 ### Changed
 
@@ -37,9 +37,9 @@ All notable changes to KatMusic are documented here. The format follows
 
 ### Added
 
-- **Branded startup sequence.** The supplied KatMusic logo animation is packaged as an Android raw video resource. After playback completes, the final emblem transitions into the static logo; the logo slides left as the “Kat Music” wordmark enters, before the app opens Login or Home.
+- **Branded startup sequence.** The supplied Krypton Music logo animation is packaged as an Android raw video resource. After playback completes, the final emblem transitions into the static logo; the logo slides left as the “Krypton Music” wordmark enters, before the app opens Login or Home.
 - **First-run experience preference.** Onboarding offers Classic and Modern appearance presets with animated selection feedback and a description of each mode. The choice is saved in the existing theme preferences.
-- **App-wide release update prompt.** The app checks the latest release from `Arct-Development/KatMusic` and can show the version and release-note preview on both Login and Home, with per-version dismissal.
+- **App-wide release update prompt.** The app checks the latest release from `Arct-Development/Krypton Music` and can show the version and release-note preview on both Login and Home, with per-version dismissal.
 - **Dedicated Group Blend Supabase backend foundation.** Added a separate Blend project schema under `server/blend/supabase/migrations`, authenticated create/join/leave functions, row-level security, hashed invitation codes, membership limits, compact-profile storage and build-time client configuration.
 - Group Blend Android cloud flows for email/password sign-up and sign-in, persisted/refreshed sessions, compact taste-profile upload, online Blend creation and joining, member/profile retrieval, refresh and leaving a group. Local profile-code sharing remains available as a fallback.
 - Website shortcut in Settings → About, alongside Arct Development repository attribution.
@@ -79,7 +79,7 @@ All notable changes to KatMusic are documented here. The format follows
 
 ### Website
 
-- Replaced simulated phone previews with real KatMusic Android screenshots and added a responsive screenshot gallery
+- Replaced simulated phone previews with real Krypton Music Android screenshots and added a responsive screenshot gallery
 - Configured the website for Next.js static export and Cloudflare Pages deployment, publishing the generated `out` directory
 - Updated the site's canonical URL and Open Graph metadata for `https://katmusic.pages.dev`
 - Updated the website's Lucide icon dependency for React 19 compatibility and replaced the removed GitHub brand icon
@@ -105,7 +105,7 @@ All notable changes to KatMusic are documented here. The format follows
   content
 - (2.0.0 supersedes the earlier full-bleed, bottom-rounded header with a plain flat bar)
 - **Rubber-band overscroll** on the Home, Explore, Library, Search, Discover, Detail,
-  Stats, Friends, Local music and Downloads lists, ported from KatMusic; the platform's
+  Stats, Friends, Local music and Downloads lists, ported from Krypton Music; the platform's
   own stretch is turned off so only one overscroll system runs at a time
 - Offline Home: the last successful feed is saved and restored on the next launch, with
   an "Offline — showing your saved feed" row and a retry action
@@ -151,13 +151,13 @@ All notable changes to KatMusic are documented here. The format follows
 
 ### Changed
 
-- Lyrics Stage is connected to KatMusic's synced lyrics controls and lyric source options
+- Lyrics Stage is connected to Krypton Music's synced lyrics controls and lyric source options
 
 ## [2.0.0] - 2026-10-30
 
 ### Changed
 
-- **New base: the native audio engine and interface now live in KatMusic.** Playback runs
+- **New base: the native audio engine and interface now live in Krypton Music.** Playback runs
   through the native audio engine with the parametric equaliser, crossfade/automix planner,
   USB exclusive output and loudness processing; lyrics, downloads, discovery, genres,
   artists, albums, playlists, podcasts, podcasts video, jam sessions and the YouTube
@@ -241,7 +241,7 @@ All notable changes to KatMusic are documented here. The format follows
   morphs, player transport uses the elastic push row, selection chips morph shape as well
   as colour, stats and quick-pick rows use segmented controls, and loading/progress now use
   shape-morph and wavy indicators
-- The KatMusic logo is now the launcher icon (adaptive, black background) and appears in
+- The Krypton Music logo is now the launcher icon (adaptive, black background) and appears in
   Settings → About
 - Housekeeping: removed the committed crash log, the local chat transcript, the unused
   vector launcher art and the empty scratch folders

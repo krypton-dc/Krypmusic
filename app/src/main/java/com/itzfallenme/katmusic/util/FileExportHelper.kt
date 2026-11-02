@@ -36,9 +36,9 @@ class FileExportHelper @Inject constructor(
     @ApplicationContext private val context: Context,
 ) {
     companion object {
-        private const val PUBLIC_EXPORT_SUBDIR = "KatMusic"
-        private const val PUBLIC_BACKUP_SUBDIR = "KatMusic/Backups"
-        private const val PUBLIC_PLAYLIST_SUBDIR = "KatMusic/Playlists"
+        private const val PUBLIC_EXPORT_SUBDIR = "Krypton Music"
+        private const val PUBLIC_BACKUP_SUBDIR = "Krypton Music/Backups"
+        private const val PUBLIC_PLAYLIST_SUBDIR = "Krypton Music/Playlists"
         private const val PLAYLIST_MIRROR_FILENAME = "katmusic-playlists.json"
         private const val PLAYLIST_RECOVERY_FILENAME = "katmusic-playlists-recovery.json"
         private const val MIRROR_PREFS = "playlist_file_mirror"
@@ -267,7 +267,7 @@ class FileExportHelper @Inject constructor(
             val resolver = context.contentResolver
             val sanitized = sanitizeFilename(title)
             val filename = "lyrics_${sanitized}_${System.currentTimeMillis()}.png"
-            val relativePath = "${Environment.DIRECTORY_PICTURES}/KatMusic"
+            val relativePath = "${Environment.DIRECTORY_PICTURES}/Krypton Music"
 
             val values = ContentValues().apply {
                 put(MediaStore.Images.Media.DISPLAY_NAME, filename)

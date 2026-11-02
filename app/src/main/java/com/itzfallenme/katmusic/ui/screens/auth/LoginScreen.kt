@@ -126,11 +126,11 @@ fun LoginScreen(
             ) {
                 Image(
                     painter = painterResource(R.drawable.ic_launcher_foreground),
-                    contentDescription = "KatMusic",
+                    contentDescription = "Krypton Music",
                     modifier = Modifier.size(112.dp).padding(bottom = 10.dp),
                 )
                 Text(
-                    "Welcome to KatMusic",
+                    "Welcome to Krypton Music",
                     style = MaterialTheme.typography.headlineMedium,
                     textAlign = TextAlign.Center,
                 )

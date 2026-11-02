@@ -68,10 +68,10 @@ import kotlin.math.max
 
 /** Independent presentation presets; playback remains owned by MusicPlayer. */
 enum class KatPlayerStyle(val label: String, val description: String) {
-    DEFAULT("Classic", "KatMusic's full player with tabs, queue and advanced controls"),
+    DEFAULT("Classic", "Krypton Music's full player with tabs, queue and advanced controls"),
     POSTER("Poster", "Oversized circular cover art with expressive, synchronized lyrics"),
     TIMELINE("Timeline", "A colour-split playhead layout with oversized elapsed and total time"),
-    LYRICS("Lyrics", "Mochy-inspired expressive lyrics using KatMusic's synced lyric engine"),
+    LYRICS("Lyrics", "Mochy-inspired expressive lyrics using Krypton Music's synced lyric engine"),
     ARTWORK("Artwork", "Large album artwork with focused playback controls"),
     VIDEO("Canvas", "Immersive animated Canvas artwork as the player background");
 

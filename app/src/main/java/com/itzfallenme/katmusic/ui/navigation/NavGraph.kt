@@ -741,7 +741,7 @@ fun KatMusicNavHost(
         AlertDialog(
             onDismissRequest = { updateBridge.dismiss(updateInfo.latestVersion) },
             shape = RoundedCornerShape(14.dp),
-            title = { Text("KatMusic update available", style = MaterialTheme.typography.titleLarge) },
+            title = { Text("Krypton Music update available", style = MaterialTheme.typography.titleLarge) },
             text = {
                 Column {
                     Text("Version ${updateInfo.latestVersion} is ready.")
@@ -809,7 +809,7 @@ private fun LaunchGate(onAnimationFinished: () -> Unit) {
     LaunchedEffect(Unit) {
         kotlinx.coroutines.delay(8_000L)
         if (!videoFinished) {
-            android.util.Log.w("KatMusicSplash", "Logo animation timed out; showing static brand mark")
+            android.util.Log.w("Krypton MusicSplash", "Logo animation timed out; showing static brand mark")
             videoFinished = true
         }
     }
@@ -848,7 +848,7 @@ private fun LaunchGate(onAnimationFinished: () -> Unit) {
                         }
                         setOnErrorListener { _, what, extra ->
                             android.util.Log.w(
-                                "KatMusicSplash",
+                                "Krypton MusicSplash",
                                 "Logo animation playback failed (what=$what, extra=$extra)",
                             )
                             videoFinished = true
@@ -869,13 +869,13 @@ private fun LaunchGate(onAnimationFinished: () -> Unit) {
         ) {
             androidx.compose.foundation.Image(
                 painter = painterResource(com.itzfallenme.katmusic.R.drawable.ic_launcher_logo),
-                contentDescription = "KatMusic logo",
+                contentDescription = "Krypton Music logo",
                 modifier = Modifier
                     .size(88.dp)
                     .offset(x = logoOffset),
             )
             Text(
-                text = "Kat Music",
+                text = "Krypton Music",
                 color = androidx.compose.ui.graphics.Color.White,
                 style = MaterialTheme.typography.headlineLarge,
                 maxLines = 1,

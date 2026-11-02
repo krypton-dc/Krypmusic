@@ -12,4 +12,4 @@ This directory preserves the five original Kotlin source files from Mochy Music'
 
 **License:** GNU General Public License v3.0. See [LICENSE](LICENSE). Copyright remains with the original project and its contributors.
 
-These are preserved as upstream reference sources, not compiled directly into KatMusic: the original package depends on Mochy-only player, carousel, lyrics, resources and preference APIs. KatMusic's adapted player implementation lives in its own player module and is marked separately as modified.
+These are preserved as upstream reference sources, not compiled directly into Krypton Music: the original package depends on Mochy-only player, carousel, lyrics, resources and preference APIs. Krypton Music's adapted player implementation lives in its own player module and is marked separately as modified.

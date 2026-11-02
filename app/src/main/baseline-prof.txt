@@ -1,5 +1,5 @@
 HSPLcom/katmusic/app/MainActivity;->**(**)**
-HSPLcom/katmusic/app/KatMusicApplication;->**(**)**
+HSPLcom/katmusic/app/Krypton MusicApplication;->**(**)**
 HSPLcom/katmusic/app/ui/shell/**->**(**)**
 HSPLcom/katmusic/app/ui/home/**->**(**)**
 HSPLcom/katmusic/app/ui/settings/**->**(**)**

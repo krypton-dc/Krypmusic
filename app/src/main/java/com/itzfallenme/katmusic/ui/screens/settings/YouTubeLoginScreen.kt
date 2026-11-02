@@ -298,7 +298,7 @@ fun YouTubeLoginScreen(
                     )
                     Spacer(Modifier.width(10.dp))
                     Text(
-                        "KatMusic never sees your password — sign-in happens entirely inside Google's page.",
+                        "Krypton Music never sees your password — sign-in happens entirely inside Google's page.",
                         style = MaterialTheme.typography.bodySmall,
                         color = MaterialTheme.colorScheme.onSurfaceVariant,
                     )

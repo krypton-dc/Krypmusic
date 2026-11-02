@@ -12,7 +12,7 @@ import kotlinx.serialization.json.put
 import kotlinx.serialization.json.putJsonArray
 
 /**
- * Discord Rich Presence ("Listening to KatMusic") payload builder.
+ * Discord Rich Presence ("Listening to Krypton Music") payload builder.
  *
  * Ported field for field from the desktop client
  * (`KatMusic-Desktop/lib/features/presence/discord_presence_service.dart`) so a
@@ -55,10 +55,10 @@ object DiscordPresence {
      */
     const val APPLICATION_ID = "1563081601254953002"
 
-    const val PROJECT_URL = "https://github.com/Arct-Development/KatMusic"
+    const val PROJECT_URL = "https://github.com/Arct-Development/Krypton Music"
     const val RELEASES_URL = "$PROJECT_URL/releases"
-    const val DEFAULT_BUTTON_1 = "Listen On KatMusic"
-    const val DEFAULT_BUTTON_2 = "Get KatMusic"
+    const val DEFAULT_BUTTON_1 = "Listen On Krypton Music"
+    const val DEFAULT_BUTTON_2 = "Get Krypton Music"
 
     /** Discord truncates nothing for us: over-long fields are dropped. */
     const val MAX_FIELD = 120
@@ -103,7 +103,7 @@ object DiscordPresence {
 
     /** The two-line status line: artist, then the measured quality. */
     fun stateLine(artist: String, album: String?, title: String, quality: String): String {
-        val head = artist.trim().ifEmpty { album?.trim()?.takeIf { it.isNotEmpty() } ?: "KatMusic" }
+        val head = artist.trim().ifEmpty { album?.trim()?.takeIf { it.isNotEmpty() } ?: "Krypton Music" }
         val raw = if (quality.isEmpty()) clip(head) else clip(head) + "\n · " + quality
         return if (raw.length > MAX_STATE) raw.substring(0, MAX_STATE - 1) + "..." else raw
     }
@@ -239,7 +239,7 @@ object DiscordPresence {
 
         return buildJsonObject {
             put("type", TYPE_LISTENING)
-            put("name", "KatMusic")
+            put("name", "Krypton Music")
             put("details", title)
             put("state", stateLine(track.artist, track.album, track.title, qualityLine(state)))
             timestamps?.let { put("timestamps", it) }

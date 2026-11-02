@@ -80,7 +80,7 @@ fun GroupBlendScreen(onBack: () -> Unit, viewModel: GroupBlendViewModel = hiltVi
                 Column(verticalArrangement = Arrangement.spacedBy(6.dp)) {
                     Text("Your music, mixed with your people.", style = MaterialTheme.typography.headlineSmall)
                     Text(
-                        "A taste match built from KatMusic listening history. No Spotify account or login needed.",
+                        "A taste match built from Krypton Music listening history. No Spotify account or login needed.",
                         color = MaterialTheme.colorScheme.onSurfaceVariant,
                     )
                 }
@@ -250,7 +250,7 @@ fun GroupBlendScreen(onBack: () -> Unit, viewModel: GroupBlendViewModel = hiltVi
                                 color = MaterialTheme.colorScheme.onPrimaryContainer,
                             )
                             Text(
-                                "Average taste similarity across every pair in this group, weighted toward artists (75%) and tracks (25%). This is a KatMusic score, not a popularity ranking.",
+                                "Average taste similarity across every pair in this group, weighted toward artists (75%) and tracks (25%). This is a Krypton Music score, not a popularity ranking.",
                                 style = MaterialTheme.typography.bodySmall,
                                 color = MaterialTheme.colorScheme.onPrimaryContainer,
                             )

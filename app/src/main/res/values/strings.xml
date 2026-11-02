@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">Krypton Music</string>
-    <string name="widget_name">KatMusic Player</string>
+    <string name="widget_name">Krypton Music Player</string>
     <string name="widget_description">Artwork, track details and playback controls for every media app</string>
-    <string name="widget_obsidian_name">KatMusic Obsidian Glass</string>
+    <string name="widget_obsidian_name">Krypton Music Obsidian Glass</string>
     <string name="widget_obsidian_description">Frosted obsidian glass player with translucent depth and crystal rim</string>
 
     <!-- Bottom navigation -->
@@ -17,7 +17,7 @@
     <string name="update_available">Update Available</string>
     <string name="update">Update</string>
     <string name="dismiss_update">Dismiss update</string>
-    <string name="update_ready_to_install">KatMusic v%1$s is ready to install</string>
+    <string name="update_ready_to_install">Krypton Music v%1$s is ready to install</string>
 
     <!-- Settings -->
     <string name="settings">Settings</string>
@@ -60,7 +60,7 @@
     <string name="theme_mode_system">System</string>
     <string name="theme_mode_light">Light</string>
     <string name="theme_mode_dark">Dark</string>
-    <string name="settings_katmusic_theme">KatMusic Signature Theme</string>
+    <string name="settings_katmusic_theme">Krypton Music Signature Theme</string>
     <string name="settings_katmusic_theme_sub">Bespoke logo palette • Electric Lime &amp; Obsidian Teal</string>
     <string name="settings_amoled">AMOLED Mode</string>
     <string name="settings_amoled_sub">Pure black background (Dark mode only)</string>
@@ -352,7 +352,7 @@
     <string name="dialog_clear_all_text">This removes your credentials, playlists, downloaded songs, and cached data. This can\'t be undone.</string>
     <string name="dialog_clear_all_confirm">Clear Everything</string>
     <string name="dialog_disconnect_yt_title">Disconnect YouTube Music?</string>
-    <string name="dialog_disconnect_yt_text">Playlists already mirrored to your account stay there, but KatMusic stops syncing and forgets the connection.</string>
+    <string name="dialog_disconnect_yt_text">Playlists already mirrored to your account stay there, but Krypton Music stops syncing and forgets the connection.</string>
     <string name="dialog_logout_title">Log out from Last.fm?</string>
     <string name="dialog_logout_text">Your playlists and cached data will be kept.</string>
 
@@ -836,7 +836,7 @@
     <string name="set_lfm_disc_title">Disconnect Last.fm?</string>
     <string name="set_lfm_disc_text">Global scrobbles pause. Your Stats switch to local listening history — nothing is deleted.</string>
     <string name="set_lfm_disc_btn">Disconnect</string>
-    <string name="set_about_title">KatMusic</string>
+    <string name="set_about_title">Krypton Music</string>
     <string name="set_color_title">Custom Color</string>
     <string name="set_hue">Hue</string>
     <string name="set_sat">Saturation</string>
@@ -845,7 +845,7 @@
     <string name="set_eq_enable">Enable Equalizer</string>
     <string name="set_eq_custom">Custom</string>
     <string name="set_yt_channel">YouTube Channel</string>
-    <string name="set_yt_channel_sub">Pick which channel\'s library, likes &amp; history KatMusic uses</string>
+    <string name="set_yt_channel_sub">Pick which channel\'s library, likes &amp; history Krypton Music uses</string>
     <string name="set_yt_loading">Loading channels…</string>
     <string name="set_yt_empty_title">No channels found</string>
     <string name="set_yt_empty_sub">Check your connection, then try again.</string>
@@ -883,11 +883,11 @@
     <string name="set_usb_old">Requires Android 10 or newer</string>
     <string name="set_usb_on">Direct usbdevfs to the DAC • Bit-Perfect engages this automatically</string>
     <string name="set_usb_off">Off • Needs a USB DAC and Bit-Perfect (or this toggle)</string>
-    <string name="set_yt_hist_on">On • songs you listen to in KatMusic, including lossless &amp; downloads, appear in your YouTube Music history</string>
-    <string name="set_yt_hist_off">Off • listening in KatMusic stays out of your YouTube Music history</string>
+    <string name="set_yt_hist_on">On • songs you listen to in Krypton Music, including lossless &amp; downloads, appear in your YouTube Music history</string>
+    <string name="set_yt_hist_off">Off • listening in Krypton Music stays out of your YouTube Music history</string>
     <string name="set_discord_title">Discord Rich Presence</string>
     <string name="set_discord_on">On • your track, quality and cover show on your Discord profile</string>
-    <string name="set_discord_off">Off • KatMusic stays off your Discord profile</string>
+    <string name="set_discord_off">Off • Krypton Music stays off your Discord profile</string>
     <string name="set_tg_sub">Join @clashprojects on Telegram</string>
     <string name="set_discord_support">Discord Support</string>
     <string name="set_discord_support_sub">Join our Discord community</string>
@@ -913,9 +913,9 @@
     <string name="toast_sync_fail">Playlist sync failed: %1$s</string>
     <string name="toast_synced">Synced %1$d playlist(s) from local JSON</string>
     <string name="toast_restored">Restored %1$d playlist(s)%2$s</string>
-    <string name="toast_newer_backup">This backup was made with a newer version of KatMusic</string>
-    <string name="toast_not_backup">That file doesn\'t look like a KatMusic backup</string>
-    <string name="toast_not_json">That isn\'t a KatMusic backup or playlist JSON</string>
+    <string name="toast_newer_backup">This backup was made with a newer version of Krypton Music</string>
+    <string name="toast_not_backup">That file doesn\'t look like a Krypton Music backup</string>
+    <string name="toast_not_json">That isn\'t a Krypton Music backup or playlist JSON</string>
     <string name="toast_empty_file">Selected file is empty or unreadable</string>
     <string name="toast_restore_fail">Restore failed: %1$s</string>
     <string name="toast_restore_read">Restore read error: %1$s</string>
@@ -1143,7 +1143,7 @@
     <string name="lyshare_mode_lyrics">Lyrics</string>
     <string name="lyshare_action_share">Share</string>
     <string name="lyshare_action_save">Save</string>
-    <string name="lyshare_saved_to_gallery">Saved to Pictures/KatMusic</string>
+    <string name="lyshare_saved_to_gallery">Saved to Pictures/Krypton Music</string>
     <string name="lyshare_save_failed">Couldn\'t save image</string>
     <string name="lyshare_share_failed">Couldn\'t share image</string>
     <string name="lyshare_button_cd">Share lyrics</string>
@@ -1158,7 +1158,7 @@
     <string name="lyshare_color_white">White</string>
     <string name="lyshare_color_black">Black</string>
     <string name="lyshare_color_accent">Accent</string>
-    <string name="lyshare_color_brand">KatMusic Lime</string>
+    <string name="lyshare_color_brand">Krypton Music Lime</string>
     <string name="lyshare_accessibility_line_selected">Selected, line %1$d of %2$d</string>
     <string name="lyshare_accessibility_line_unselected">Line %1$d of %2$d</string>
     <!-- Remaining screen strings -->
@@ -1269,7 +1269,7 @@
     <string name="autoeq_msg_download_failed">Couldn\'t download this profile</string>
     <string name="autoeq_msg_device_saved">Profile saved for this device</string>
     <string name="signal_label_autoeq">AutoEQ</string>
-    <string name="signal_detail_autoeq">Correction applied by KatMusic (changes the samples, Android mixer still bypassed)</string>
-    <string name="signal_verdict_direct_eq">Android mixer bypassed. KatMusic applies your AutoEQ correction, then the samples go straight to the HAL.</string>
+    <string name="signal_detail_autoeq">Correction applied by Krypton Music (changes the samples, Android mixer still bypassed)</string>
+    <string name="signal_verdict_direct_eq">Android mixer bypassed. Krypton Music applies your AutoEQ correction, then the samples go straight to the HAL.</string>
     <string name="signal_direct_eq">DIRECT + EQ</string>
 </resources>

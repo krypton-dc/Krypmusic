@@ -10,12 +10,12 @@ on:
       release_name:
         description: 'Public release title'
         required: true
-        default: 'KatMusic 2.5.0'
+        default: 'Krypton Music 2.5.0'
       release_notes:
         description: 'Changelog / Release Notes'
         required: false
         default: |
-          ## KatMusic 2.5.0
+          ## Krypton Music 2.5.0
 
           ### Added
           - Online Listen Together rooms with host approval, room chat, reconnect tokens, shared queue metadata and synchronized playback through the production WebSocket relay.
@@ -62,7 +62,7 @@ jobs:
             echo "::error::Requested tag $REQUESTED_TAG does not match app version $APP_VERSION"
             exit 1
           fi
-          echo "Preparing KatMusic $APP_VERSION"
+          echo "Preparing Krypton Music $APP_VERSION"
           
       - name: Set up JDK 17
         uses: actions/setup-java@cf277c60eb25467037889841efdb72551f06f6c3 # v4
@@ -93,15 +93,15 @@ jobs:
           TAG="${{ inputs.tag_name }}"
           # Universal release (Android 10+, R8 + ProGuard + shrinkResources)
           if [ -f "app/build/outputs/apk/release/app-release-signed.apk" ]; then
-            cp app/build/outputs/apk/release/app-release-signed.apk final_apk/KatMusic-v${TAG}-universal.apk
+            cp app/build/outputs/apk/release/app-release-signed.apk final_apk/Krypton Music-v${TAG}-universal.apk
           else
-            cp app/build/outputs/apk/release/app-release.apk final_apk/KatMusic-v${TAG}-universal.apk
+            cp app/build/outputs/apk/release/app-release.apk final_apk/Krypton Music-v${TAG}-universal.apk
           fi
           # Universal uncompressed variant (Android 10+, raw debuggable/unminified)
           if [ -f "app/build/outputs/apk/rawRelease/app-rawRelease-signed.apk" ]; then
-            cp app/build/outputs/apk/rawRelease/app-rawRelease-signed.apk final_apk/KatMusic-v${TAG}-universal-uncompressed.apk
+            cp app/build/outputs/apk/rawRelease/app-rawRelease-signed.apk final_apk/Krypton Music-v${TAG}-universal-uncompressed.apk
           else
-            cp app/build/outputs/apk/rawRelease/app-rawRelease.apk final_apk/KatMusic-v${TAG}-universal-uncompressed.apk
+            cp app/build/outputs/apk/rawRelease/app-rawRelease.apk final_apk/Krypton Music-v${TAG}-universal-uncompressed.apk
           fi
           rm -rf app/build/outputs/apk/release/*
 
@@ -130,9 +130,9 @@ jobs:
         run: |
           TAG="${{ inputs.tag_name }}"
           if [ -f "app/build/outputs/apk/release/app-release-signed.apk" ]; then
-            cp app/build/outputs/apk/release/app-release-signed.apk final_apk/KatMusic-v${TAG}-android7.apk
+            cp app/build/outputs/apk/release/app-release-signed.apk final_apk/Krypton Music-v${TAG}-android7.apk
           else
-            cp app/build/outputs/apk/release/app-release.apk final_apk/KatMusic-v${TAG}-android7.apk
+            cp app/build/outputs/apk/release/app-release.apk final_apk/Krypton Music-v${TAG}-android7.apk
           fi
           ls -lh final_apk/
 
@@ -159,7 +159,7 @@ jobs:
             echo "::error::ARM64-only release APK unexpectedly contains 32-bit ARM libraries"
             exit 1
           fi
-          cp "$APK" "final_apk/KatMusic-v${TAG}-arm64-v8a.apk"
+          cp "$APK" "final_apk/Krypton Music-v${TAG}-arm64-v8a.apk"
           ls -lh final_apk/
 
       - name: Verify APK signatures + publish checksums
@@ -205,16 +205,16 @@ jobs:
 
           | Package | Recommended OS | Description |
           | :--- | :--- | :--- |
-          | **`KatMusic-v__TAG__-universal.apk`** (~22 MB) | **Android 10+ (Android 10 – 16+)** | **Standard Recommended Release.** R8-optimized universal APK for supported CPU architectures. |
-          | **`KatMusic-v__TAG__-arm64-v8a.apk`** | **Android 10+ (64-bit ARM)** | **ARM64 build.** Smaller ABI-specific package for arm64-v8a phones and tablets. |
-          | **`KatMusic-v__TAG__-universal-uncompressed.apk`** (~89 MB) | **Android 10+ (Android 10 – 16+)** | **Raw Release.** Unminified debuggable variant with uncompressed native libraries. |
-          | **`KatMusic-v__TAG__-android7.apk`** (~17 MB) | **Android 7.0 – 9.0 (Legacy)** | **Legacy Android 7.0+ Variant.** Built with compressed native libraries for older package managers. |
+          | **`Krypton Music-v__TAG__-universal.apk`** (~22 MB) | **Android 10+ (Android 10 – 16+)** | **Standard Recommended Release.** R8-optimized universal APK for supported CPU architectures. |
+          | **`Krypton Music-v__TAG__-arm64-v8a.apk`** | **Android 10+ (64-bit ARM)** | **ARM64 build.** Smaller ABI-specific package for arm64-v8a phones and tablets. |
+          | **`Krypton Music-v__TAG__-universal-uncompressed.apk`** (~89 MB) | **Android 10+ (Android 10 – 16+)** | **Raw Release.** Unminified debuggable variant with uncompressed native libraries. |
+          | **`Krypton Music-v__TAG__-android7.apk`** (~17 MB) | **Android 7.0 – 9.0 (Legacy)** | **Legacy Android 7.0+ Variant.** Built with compressed native libraries for older package managers. |
 
           > [!WARNING]
-          > **Notice for Android 7.0 – 9.0 Users (`KatMusic-v__TAG__-android7.apk`):**
+          > **Notice for Android 7.0 – 9.0 Users (`Krypton Music-v__TAG__-android7.apk`):**
           > - Hardware GPU glassmorphism / live blur requires Android 12+ and is automatically replaced with translucent dark canvas acrylic styling on older devices.
           > - The media notification uses classic Android media controls rather than Android 13's wavy-progress player.
-          > - For any device running Android 10 or newer, please install the standard **`KatMusic-v__TAG__-universal.apk`** for optimal performance and memory efficiency.
+          > - For any device running Android 10 or newer, please install the standard **`Krypton Music-v__TAG__-universal.apk`** for optimal performance and memory efficiency.
           EOF
 
           sed -i "s/__TAG__/${TAG}/g" notice.md

@@ -2,7 +2,7 @@
 
 ## Our pledge
 
-We want KatMusic to be a welcoming project for everyone, regardless of experience
+We want Krypton Music to be a welcoming project for everyone, regardless of experience
 level, background, identity or language.
 
 ## Expected behaviour
