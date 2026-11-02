@@ -74,7 +74,7 @@ android {
             buildConfigString(resolveSecret("KATMUSIC_BLEND_SUPABASE_PUBLISHABLE_KEY")),
         )
 
-        applicationId = "com.itzfallenme.katmusic"
+        applicationId = "com.krypton.music"
         minSdk = (project.findProperty("minSdk") as? String)?.toIntOrNull() ?: 29
         targetSdk = 35
         versionCode = 2500
