@@ -78,7 +78,7 @@ jobs:
             exit 1
           fi
           mkdir -p dist
-    cp "$APK" dist/krypton-music-arm64-v8a-debug.apk
+                cp "$APK" dist/krypton-music-arm64-v8a-debug.apk
           sha256sum dist/krypton-music-arm64-v8a-debug.apk > dist/SHA256SUMS.txt
 
       - name: Upload ARM64 debug APK
